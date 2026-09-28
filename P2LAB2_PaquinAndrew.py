@@ -18,12 +18,14 @@ print()
 #Get the MPG for the entered model
 mpg = cars.get(model)
 if mpg is not None:
-    print(f"The {model} gets {mpg}")
+    print(f"The {model} gets {mpg} mpg")
 else:
     print(f"Model {model} not found in the dictionary.")
 
+print()
+
 #ask user how many miles they will drive the model
-miles = float(input(f"How many miles you will drive the {model}: "))
+miles = float(input(f"How many miles you will drive the {model}?: "))
 print()
 
 #calculate the amount of gas needed
