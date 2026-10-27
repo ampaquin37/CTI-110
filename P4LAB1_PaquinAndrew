@@ -1,0 +1,55 @@
+#Andrew Paquin
+#27 OCT 2026
+#P4 LAB1
+#Use turtle and loops to draw a square and a triangle
+
+#import turtle library
+import turtle
+
+#create a turtle window and drawing object
+win = turtle.Screen()
+pen = turtle.Turtle()
+
+#set background color
+turtle.bgcolor('yellow')
+
+#set turtle options
+pen.pensize(5)
+pen.pencolor("blue")
+pen.shape("arrow")
+
+#code to draw the square using "for"
+for side in range (5) :
+    pen.left(90)
+    pen.forward(200)
+    
+
+#code to draw the triangle using "while"
+sides = 3
+while sides > 0:
+   pen.left(60)
+   pen.forward(115)
+   sides = sides - 1
+
+#create door
+pen.forward(80)
+pen.left(90)
+pen.forward(80)
+pen.left(90)
+pen.forward(90)
+pen.right(90)
+pen.forward(40)
+pen.right(90)
+pen.forward(90)
+
+
+
+
+
+#to keep turtle window open
+input () 
+
+
+
+
+
